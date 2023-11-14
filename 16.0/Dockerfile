@@ -14,7 +14,7 @@ RUN apt-get update && \
 RUN mkdir odoo-dev
 WORKDIR "/odoo-dev"
 
-RUN git clone --depth=1 https://github.com/odoo/odoo odoo
+RUN git clone --single-branch --branch 16.0 --depth=1 https://github.com/odoo/odoo odoo
 
 RUN curl -o wkhtmltox.deb -sSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb && \
     apt-get install -y --no-install-recommends ./wkhtmltox.deb && \
