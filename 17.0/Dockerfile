@@ -30,7 +30,9 @@ RUN sed -n -e '/^Depends:/,/^Pre/ s/ python3-\(.*\),/python3-\1/p' debian/contro
 RUN npm install -g rtlcss
 
 COPY ./run-odoo.sh /odoo-dev/
+RUN sed -i -e 's/\r$//' /odoo-dev/run-odoo.sh
+RUN chmod +x /odoo-dev/run-odoo.sh
 
 EXPOSE 8069 8071 8072
 
-WORKDIR /odoo
+WORKDIR /odoo-dev
