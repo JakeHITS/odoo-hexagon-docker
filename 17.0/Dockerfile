@@ -12,7 +12,7 @@ RUN apt-get update && \
         npm
 
 RUN mkdir odoo-dev
-WORKDIR "/odoo-dev"
+WORKDIR /odoo-dev
 
 RUN git clone --single-branch --branch 17.0 --depth=1 https://github.com/odoo/odoo odoo
 
@@ -34,5 +34,7 @@ RUN sed -i -e 's/\r$//' /odoo-dev/run-odoo.sh
 RUN chmod +x /odoo-dev/run-odoo.sh
 
 EXPOSE 8069 8071 8072
+
+RUN mkdir -p /odoo-dev/hits-apps
 
 WORKDIR /odoo-dev

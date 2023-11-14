@@ -35,4 +35,6 @@ RUN chmod +x /odoo-dev/run-odoo.sh
 
 EXPOSE 8069 8071 8072
 
+RUN mkdir -p /odoo-dev/hits-apps
+
 WORKDIR /odoo-dev
