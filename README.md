@@ -14,3 +14,9 @@ docker attach odoo
 ```
 
 You can find the Docker repository [here](https://hub.docker.com/r/jakeknow17/odoo-hexagon-dev).
+
+## Running Odoo
+To run Odoo once inside the docker container, run the following command:
+```
+/odoo-dev/run-odoo.sh
+```
