@@ -9,7 +9,8 @@ RUN apt-get update && \
         curl \
         python3 \
         python3-pip \
-        npm
+        npm \
+        sudo
 
 RUN mkdir odoo-dev
 WORKDIR "/odoo-dev"
