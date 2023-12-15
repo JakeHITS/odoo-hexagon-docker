@@ -10,6 +10,10 @@ docker run -it -p 8069:8069 -p 8071:8071 -p 8072:8072 --name odoo --link db:db j
 
 You can find the Docker repository [here](https://hub.docker.com/r/jakeknow17/odoo-hexagon-dev).
 
+## Dependencies
+
+Once inside the `/odoo-dev` directory, make sure to clone the [`odoo/enterprise`](https://github.com/odoo/enterprise) repository as well as clone this repository when inside the odoo-dev/hits-apps folder.
+
 ## Running Odoo
 To run Odoo once inside the docker container, run the following command:
 ```
