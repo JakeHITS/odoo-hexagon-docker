@@ -24,3 +24,12 @@ To run Odoo once inside the docker container, run the following command:
 ```
 /odoo-dev/run-odoo.sh
 ```
+
+## Github
+
+If you have any issues authenticating your Github account within the docker container, install the [Github CLI](https://github.com/cli/cli)
+
+Then, you can authenticate by running the following command:
+```
+gh auth login
+```
