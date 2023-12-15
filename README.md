@@ -14,22 +14,3 @@ docker attach odoo
 ```
 
 You can find the Docker repository [here](https://hub.docker.com/r/jakeknow17/odoo-hexagon-dev).
-
-## Dependencies
-
-Once inside the `/odoo-dev` directory, make sure to clone the [`odoo/enterprise`](https://github.com/odoo/enterprise) repository as well as clone this repository when inside the odoo-dev/hits-apps folder.
-
-## Running Odoo
-To run Odoo once inside the docker container, run the following command:
-```
-/odoo-dev/run-odoo.sh
-```
-
-## Github
-
-If you have any issues authenticating your Github account within the docker container, install the [Github CLI](https://github.com/cli/cli)
-
-Then, you can authenticate by running the following command:
-```
-gh auth login
-```
