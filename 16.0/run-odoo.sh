@@ -5,7 +5,7 @@ CMD="/odoo-dev/odoo/odoo-bin --addons-path=/odoo-dev/odoo/addons,/odoo-dev/enter
 if ! [ -f /odoo-dev/.ran_odoo ]
 then
     touch /odoo-dev/.ran_odoo
-    CMD += " -i base"
+    CMD+=" -i base"
 fi
 
 $CMD
